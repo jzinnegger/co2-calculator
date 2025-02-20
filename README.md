@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SME CO2 Footprint Calculator
+
+A web-based calculator helping small and medium enterprises (SMEs) track and calculate their carbon footprint. The calculator provides instant feedback with numerical results and visual representations.
+
+## Features
+
+- Building emissions tracking (electricity, waste, water, gas)
+- Transport emissions tracking (car, bus, train, short-haul flights)
+- Real-time calculations
+- Visual data representation with pie charts
+- Responsive design
+- Type-safe implementation
+
+## Tech Stack
+
+- **Framework:** Next.js 14.1.0
+- **Language:** TypeScript
+- **UI Components:** shadcn/ui
+- **Styling:** Tailwind CSS
+- **Charts:** Recharts
+- **React Version:** 18.2.0
+
+## Project Structure
+
+```
+app/
+├── components/
+│   ├── ui/           # shadcn/ui components
+│   ├── CO2Calculator.tsx  # Main calculator component
+│   ├── ErrorBoundary.tsx  # Error handling component
+│   └── LoadingState.tsx   # Loading state component
+├── config/
+│   └── emissionFactors.ts # CO2 emission conversion factors
+├── types/
+│   └── calculator.ts      # TypeScript type definitions
+├── lib/
+│   └── utils.ts          # Utility functions
+├── layout.tsx
+├── globals.css
+└── page.tsx
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jzinnegger/co2-calculator.git
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+- `npm run dev` - Start development server
+- `npm run build` - Build the application
+- `npm run start` - Start production server
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is automatically deployed through Vercel integration. Every push to the main branch triggers a new deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Links
 
-## Deploy on Vercel
+- GitHub Repository: https://github.com/jzinnegger/co2-calculator.git
+- Vercel Deployment: [Your Vercel URL]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Development Status
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Initial setup complete
+- ✅ Core calculator functionality implemented
+- ✅ UI components integrated
+- ✅ Build errors resolved
+- ✅ Local testing successful
+- ✅ Production deployment ready
