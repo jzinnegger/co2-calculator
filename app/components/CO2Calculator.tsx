@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "./ui/card";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts';
@@ -268,6 +268,23 @@ const CO2Calculator = () => {
               </div>
             </div>
           </CardContent>
+          <CardFooter className="flex flex-col space-y-4 text-sm text-gray-500 mt-4 border-t pt-4">
+            <p>
+              This application was autonomously created by Claude 3.5 Sonnet based on a prompt. 
+              The calculations and emission factors have not been independently validated and are provided without any warranties.
+            </p>
+            <p>
+              For further information and source code please visit  {' '}
+              <a 
+                href="https://github.com/jzinnegger/co2-calculator" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 hover:underline"
+              >
+                github.com/jzinnegger/co2-calculator
+              </a>
+            </p>
+          </CardFooter>
         </Card>
       </div>
     </ErrorBoundary>

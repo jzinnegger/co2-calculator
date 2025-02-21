@@ -2,6 +2,13 @@
 
 A web-based calculator helping small and medium enterprises (SMEs) track and calculate their carbon footprint. The calculator provides instant feedback with numerical results and visual representations.
 
+> **Important Note**: This application was autonomously created by Claude 3.5 Sonnet based on a prompt. The calculations and emission factors have not been independently validated and are provided without any warranties.
+
+## Live Demo
+
+Visit the deployed application at: [https://co2-calculator-sigma.vercel.app](https://co2-calculator-sigma.vercel.app)
+
+
 ## Features
 
 - Building emissions tracking (electricity, waste, water, gas)
@@ -72,7 +79,7 @@ The project is automatically deployed through Vercel integration. Every push to 
 ## Project Links
 
 - GitHub Repository: https://github.com/jzinnegger/co2-calculator.git
-- Vercel Deployment: [Your Vercel URL]
+- Vercel Deployment: [https://co2-calculator-sigma.vercel.app](https://co2-calculator-sigma.vercel.app)
 
 ## Development Status
 
